@@ -5,6 +5,7 @@ import ErrorPage from "./ErrorPage";
 import Root from "./Root";
 import Home from "./Home";
 import Categories from "./Categories";
+import AddProduct from "./AddProduct";
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/signin",
         element: <SignIn></SignIn>
+      },
+      {
+        path: "/addProduct",
+        element: <AddProduct></AddProduct>
       }
 
     ]
