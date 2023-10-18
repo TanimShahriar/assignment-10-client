@@ -4,8 +4,10 @@ import SignIn from "./SignIn";
 import ErrorPage from "./ErrorPage";
 import Root from "./Root";
 import Home from "./Home";
-import Categories from "./Categories";
+// import Categories from "./Categories";
 import AddProduct from "./AddProduct";
+import UpdateProduct from "./UpdateProduct";
+import MyCart from "./MyCart";
 
 
 const router = createBrowserRouter([
@@ -36,6 +38,15 @@ const router = createBrowserRouter([
       {
         path: "/addProduct",
         element: <AddProduct></AddProduct>
+      },
+      {
+        path: "/updateProduct",
+        element: <UpdateProduct></UpdateProduct>
+      },
+      {
+        path: "/myCart",
+        element: <MyCart></MyCart>,
+        loader: () => fetch("http://localhost:5000/product")
       }
 
     ]
