@@ -1,12 +1,5 @@
-// import { Link } from "react-router-dom";
-// import Navbar from "./Navbar";
-// import { useContext } from "react";
-// import { AuthContext } from "../../Provider/AuthProvider";
-// import { useState } from "react";
+
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
-// import { updateProfile } from "firebase/auth";
 
 import { useContext, useState } from "react";
 import { AuthContext } from "./AuthProvider";
@@ -26,9 +19,7 @@ const SignUp = () => {
 
   const handleRegister = e => {
     e.preventDefault();
-    // const email = e.target.email.value;
-    // const password = e.target.password.value;
-    // const accepted = e.target.terms.checked;
+
     console.log(e.currentTarget);
     const form = new FormData(e.currentTarget);
     const name = form.get('name')
@@ -76,13 +67,10 @@ const SignUp = () => {
 
         updateProfile(result.user, {
           displayName: name,
-          photoURL: "https://i.ibb.co/rpRCLf2/Bae-Suzy.jpg"
+          photoURL: photo
         })
 
-        // sendEmailVerification(result.user)
-        //   .then(() => {
-        //     alert("Please check your email and verify your email")
-        //   })
+
 
       })
       .catch(error => {
