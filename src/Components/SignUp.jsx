@@ -98,8 +98,8 @@ const SignUp = () => {
   return (
     <div className="mt-5">
       <Navbar></Navbar>
-      <div className=" max-w-3xl h-[700px] mx-auto p-10 rounded-lg mt-5 bg-green-600"  >
-        <h2 className="text-center text-4xl font-semibold mb-2">Register your account</h2>
+      <div className=" max-w-3xl h-[700px] mx-auto p-10 rounded-lg mt-5 shadow-lg border"  >
+        <h2 className="text-center text-4xl font-semibold mb-2">Sign up new account</h2>
 
         <form onSubmit={handleRegister} className=" max-w-screen-md mx-auto space-y-4 ">
           <div className="flex flex-col justify-center gap-4">
@@ -127,7 +127,7 @@ const SignUp = () => {
             <label className="" htmlFor="terms"></label>
             <p className="">Accept <a href=""></a> Terms and Conditions</p>
           </div>
-          <input className="bg-blue-600 cursor-pointer text-white px-4 py-2 w-full rounded-md hover:bg-green-700 duration-200" type="submit" value="Sign up" />
+          <input className="bg-slate-100 cursor-pointer font-medium px-4 py-2 w-full rounded-md hover:bg-slate-400 duration-200" type="submit" value="Sign up" />
         </form>
 
         {
@@ -145,7 +145,7 @@ const SignUp = () => {
 
         }
 
-        <p className="text-center text-lg font-medium mt-4">Already have an account? Please <Link to='/signin' className="text-white font-medium underline">Sign in</Link></p>
+        <p className="text-center text-lg font-medium mt-4">Already have an account? Please <Link to='/signin' className="text-blue-600 font-medium underline">Sign in</Link></p>
 
       </div >
       <ToastContainer />

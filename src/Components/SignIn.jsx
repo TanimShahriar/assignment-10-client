@@ -117,29 +117,29 @@ const SignIn = () => {
 
       <Navbar></Navbar>
 
-      <div className="max-w-3xl h-[700px] mx-auto p-10 rounded-lg mt-5 bg-green-600">
+      <div className="max-w-3xl h-[700px] mx-auto p-10 rounded-lg mt-5 shadow-lg border">
 
 
         <h2 className="text-center text-4xl font-semibold mt-5 mb-7  ">Sign in to your account</h2> <hr />
         <form onSubmit={handleSignIn} className=" mx-auto space-y-4 ">
           <div className="flex flex-col justify-center gap-4 ">
             <label className="text-xl font-semibold mt-6" htmlFor="">E-mail Address</label>
-            <input className="px-4 py-4 rounded" type="email" name="email" ref={emailRef} placeholder="Enter your email address" id="" required />
+            <input className="px-4 py-4 rounded bg-slate-100" type="email" name="email" ref={emailRef} placeholder="Enter your email address" id="" required />
             <label className="text-xl font-semibold" htmlFor="">Password</label>
-            <input className="px-4 py-4 rounded" type="password" name="password" placeholder="Enter your password" id="" required />
+            <input className="px-4 py-4 rounded bg-slate-100" type="password" name="password" placeholder="Enter your password" id="" required />
 
           </div>
 
           <p>Forgot password? <span onClick={handleResetPassword} className="cursor-pointer text-cyan-700 underline">Reset password</span></p>
 
 
-          <button className="w-full"> <input className="bg-blue-600 cursor-pointer text-white px-4 py-4 w-full rounded-md hover:bg-slate-400 hover:text-black duration-200" type="submit" value="Sign in" /></button>
+          <button className="w-full"> <input className="bg-slate-100 cursor-pointer font-medium px-4 py-4 w-full rounded-md hover:bg-slate-400 hover:text-black duration-200" type="submit" value="Sign in" /></button>
 
           <p className="text-center mt-4 text-lg font-medium">Don't Have an Account? <Link to='/signup' className="text-blue-700 font-medium underline">Sign up</Link></p>
 
           <p className="text-center">-------  or  -------</p>
 
-          <input onClick={handleGoogleSignIn} className="bg-blue-600 text-white cursor-pointer px-4 py-3 hover:bg-slate-400 hover:text-black duration-200 w-full mb-4 rounded-md" type="submit" value="Sign in with Google" />
+          <input onClick={handleGoogleSignIn} className="bg-slate-100 cursor-pointer font-medium px-4 py-3 hover:bg-slate-400 hover:text-black duration-200 w-full mb-4 rounded-md" type="submit" value="Sign in with Google" />
 
         </form>
 

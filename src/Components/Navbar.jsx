@@ -1,25 +1,27 @@
 // import { useContext } from "react";
-// import { CgProfile } from "react-icons/cg";
+import { CgProfile } from "react-icons/cg";
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-// import { AuthContext } from "../../Provider/AuthProvider";
+import { AuthContext } from "./AuthProvider";
+
 
 
 
 const Navbar = () => {
 
 
-  // const { user, setUser, logOut } = useContext(AuthContext);
+  const { user, setUser, signOutt } = useContext(AuthContext);
 
-  // const handleSignOut = () => {
-  //   logOut()
-  //     .then(result => {
-  //       console.log(result.user);
-  //       setUser(result.user);
-  //     })
-  //     .catch(error => {
-  //       console.log(error.message);
-  //     })
-  // }
+  const handleSignOut = () => {
+    signOutt()
+      .then(result => {
+        console.log(result.user);
+        setUser(result.user);
+      })
+      .catch(error => {
+        console.log(error.message);
+      })
+  }
 
 
   const navLinks = <>
@@ -58,7 +60,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end gap-3">
-          {/* {
+          {
             user ?
               <img className="h-12 w-12 rounded-full" src={user.photoURL} alt="" />
               :
@@ -69,15 +71,15 @@ const Navbar = () => {
               <div className="flex items-center gap-1">
 
                 <h2 className="text-center text-sm lg:text-lg font-medium lg:font-semibold">{user.displayName}</h2>
-                <button onClick={handleSignOut} className="text-sm lg:text-lg text-white font-light lg:font-semibold px-2 lg:px-5 py-1 lg:py-2 bg-blue-600 rounded-md">Sign out</button>
+                <button onClick={handleSignOut} className="text-sm lg:text-base text-white font-light lg:font-semibold px-2 lg:px-5 py-1 lg:py-2 bg-blue-600 rounded-md">Sign out</button>
                 <h2></h2>
               </div>
               :
-              <Link to='/login'>
-                <button className="text-sm lg:text-lg text-white font-semibold px-4 py-1 lg:px-10 lg:py-2 bg-green-700 rounded-md">Login</button>
+              <Link to='/signin'>
+                <button className="text-sm lg:text-base text-white font-semibold px-4 py-1 lg:px-10 lg:py-2 bg-green-600 rounded-md">Sign in</button>
               </Link>
           }
- */}
+
 
 
 
