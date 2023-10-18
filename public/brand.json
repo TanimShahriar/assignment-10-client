@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/6ZqyX0s/apple-purple.png",
+    "name": "Apple iPhone 13 Pro",
+    "brand": "Apple",
+    "type": "Smartphone",
+    "price": 1099.99,
+    "rating": 4.8,
+    "details_button": "View Details",
+    "update_button": "Update Cart",
+    "submit_button": "Submit",
+    "add_button": "Add to Cart"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/tzt8x7j/samsung.jpg",
+    "name": "Samsung Galaxy S21 Ultra",
+    "brand": "Samsung",
+    "type": "Smartphone",
+    "price": 999.99,
+    "rating": 4.7,
+    "details_button": "View Details",
+    "update_button": "Update Cart",
+    "submit_button": "Submit",
+    "add_button": "Add to Cart"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/N2PqcSR/lg.png",
+    "name": "LG OLED TV C1 Series",
+    "brand": "LG",
+    "type": "TV",
+    "price": 1499.99,
+    "rating": 4.9,
+    "details_button": "View Details",
+    "update_button": "Update Cart",
+    "submit_button": "Submit",
+    "add_button": "Add to Cart"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/YRz3WkM/sony.jpg",
+    "name": "Sony PlayStation 5",
+    "brand": "Sony",
+    "type": "Gaming Console",
+    "price": 499.99,
+    "rating": 4.6,
+    "details_button": "View Details",
+    "update_button": "Update Cart",
+    "submit_button": "Submit",
+    "add_button": "Add to Cart"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/XYZbRWy/google-logo.jpg",
+    "name": "Google Pixel 6",
+    "brand": "Google",
+    "type": "Smartphone",
+    "price": 799.99,
+    "rating": 4.5,
+    "details_button": "View Details",
+    "update_button": "Update Cart",
+    "submit_button": "Submit",
+    "add_button": "Add to Cart"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/4Fn2B6b/intel.jpg",
+    "name": "Intel Core i9-11900K CPU",
+    "brand": "Intel",
+    "type": "Processor",
+    "price": 499.99,
+    "rating": 4.8,
+    "details_button": "View Details",
+    "update_button": "Update Cart",
+    "submit_button": "Submit",
+    "add_button": "Add to Cart"
+  }
+]

@@ -4,6 +4,7 @@ import SignIn from "./SignIn";
 import ErrorPage from "./ErrorPage";
 import Root from "./Root";
 import Home from "./Home";
+import Categories from "./Categories";
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
         element: <Home></Home>,
 
       },
+      // {
+      //   path: "/categories",
+      //   element: <Categories></Categories>,
+      //   loader: () => fetch('/categories.json')
+      // },
 
       {
         path: "/signup",
