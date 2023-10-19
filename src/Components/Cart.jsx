@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
-const Cart = ({ product }) => {
+const Cart = ({ product, products, setProducts }) => {
   const { _id, name, photo } = product;
 
   const handleDelete = _id => {
@@ -30,8 +30,8 @@ const Cart = ({ product }) => {
                 'Your product has been deleted.',
                 'success'
               )
-              // const remaining = productss.filter(pro => pro._id !== _id);
-              // setProductss(remaining);
+              const remaining = products.filter(pro => pro._id !== _id);
+              setProducts(remaining);
             }
 
           })
@@ -44,7 +44,7 @@ const Cart = ({ product }) => {
 
   return (
     <div className="m-4 p-4 grid grid-cols-4 gap-7 items-center border-2 border-red-700 rounded-lg">
-      <img src={photo} alt="" />
+      <img className="w:28 lg:w-52 h-28 lg:h-48" src={photo} alt="" />
       <div className="col-span-2 space-y-3">
         <h2 className="font-medium">Name: {name}</h2>
       </div>

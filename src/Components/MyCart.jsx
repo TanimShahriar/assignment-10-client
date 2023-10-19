@@ -5,15 +5,15 @@ import { useState } from "react";
 
 
 const MyCart = () => {
-  const products = useLoaderData();
-  const [productss, setProductss] = useState([]);
+  const loadedProducts = useLoaderData();
+  const [products, setProducts] = useState(loadedProducts);
 
   return (
     <div>
       <Navbar></Navbar>
-      <div className='max-w-screen-2xl mx-auto grid grid-cols-2 gap-4'>
+      <div className='max-w-screen-2xl mx-auto grid  lg:grid-cols-2 gap-4'>
         {
-          products.map(product => <Cart key={product._id} productss={productss} setProductss={setProductss} product={product}></Cart>)
+          products.map(product => <Cart key={product._id} products={products} setProducts={setProducts} product={product}></Cart>)
         }
       </div>
     </div>

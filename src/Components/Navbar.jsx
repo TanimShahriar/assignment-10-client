@@ -30,7 +30,7 @@ const Navbar = () => {
     <NavLink className="focus:bg-green-600 px-3 py-1 text-lg font-semibold rounded-md focus:text-white" to='/gallery'>Gallery</NavLink>
     <NavLink className="focus:bg-green-600 px-3 py-1 text-lg font-semibold rounded-md focus:text-white" to='/addProduct'>Add Product</NavLink>
     <NavLink className="focus:bg-green-600 px-3 py-1 text-lg font-semibold rounded-md focus:text-white" to='/myCart'>My Cart</NavLink>
-    <NavLink className="focus:bg-green-600 px-3 py-1 text-lg font-semibold rounded-md focus:text-white" to='/updateProduct'>Update Product</NavLink>
+
 
     <NavLink className="focus:bg-green-600 px-3 py-1 text-lg font-semibold rounded-md focus:text-white" to='/signin'>Sign In</NavLink>
 

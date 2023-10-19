@@ -4,7 +4,7 @@ import SignIn from "./SignIn";
 import ErrorPage from "./ErrorPage";
 import Root from "./Root";
 import Home from "./Home";
-// import Categories from "./Categories";
+import Categories from "./Categories";
 import AddProduct from "./AddProduct";
 import UpdateProduct from "./UpdateProduct";
 import MyCart from "./MyCart";
@@ -21,11 +21,10 @@ const router = createBrowserRouter([
         element: <Home></Home>,
 
       },
-      // {
-      //   path: "/categories",
-      //   element: <Categories></Categories>,
-      //   loader: () => fetch('/categories.json')
-      // },
+      {
+        path: "/categories",
+        element: <Categories></Categories>,
+      },
 
       {
         path: "/signup",
