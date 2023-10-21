@@ -1,0 +1,23 @@
+[
+  {
+    "clientId": 1,
+    "name": "John Doe",
+    "description": "I absolutely love the new smartphone I purchased from this website. It's fast, reliable, and the camera is amazing!",
+    "image": "https://i.ibb.co/WD9Db62/random-1.jpg",
+    "rating": 5
+  },
+  {
+    "clientId": 2,
+    "name": "Alice Smith",
+    "description": "The customer service here is exceptional. They helped me choose the perfect laptop for my needs, and I couldn't be happier with it.",
+    "image": "https://i.ibb.co/xjf7c5c/random-6.jpg",
+    "rating": 4
+  },
+  {
+    "clientId": 3,
+    "name": "Bob Johnson",
+    "description": "I bought a smartwatch from this website, and it's been a great addition to my daily routine. It's stylish and works flawlessly.",
+    "image": "https://i.ibb.co/ysxRKGc/random-3.jpg",
+    "rating": 4.5
+  }
+]

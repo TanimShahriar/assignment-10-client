@@ -3,7 +3,8 @@ import Swal from "sweetalert2";
 
 
 const Cart = ({ product, products, setProducts }) => {
-  const { _id, name, photo } = product;
+  const { id, _id, name, photo, brand, price, type } = product;
+  console.log(product);
 
   const handleDelete = _id => {
     console.log(_id);
@@ -18,7 +19,7 @@ const Cart = ({ product, products, setProducts }) => {
     }).then((result) => {
       if (result.isConfirmed) {
 
-        fetch(`http://localhost:5000/product/${_id}`, {
+        fetch(`http://localhost:5000/addtocart/${_id}`, {
           method: "DELETE"
         })
           .then(res => res.json())
@@ -43,16 +44,20 @@ const Cart = ({ product, products, setProducts }) => {
 
 
   return (
-    <div className="m-4 p-4 grid grid-cols-4 gap-7 items-center border-2 border-red-700 rounded-lg">
-      <img className="w:28 lg:w-52 h-28 lg:h-48" src={photo} alt="" />
-      <div className="col-span-2 space-y-3">
-        <h2 className="font-medium">Name: {name}</h2>
+    <div className="m-1 p-4  gap-7 items-center border shadow-lg  rounded-lg">
+      <img className="mb-3 w-32 lg:w-full h-20 lg:h-72" src={photo} alt="" />
+      <div className=" space-y-1 ">
+        <h2 className="font-medium">Model: {name}</h2>
+        <h2 className="font-medium">Brand: {brand}</h2>
+        <h2 className="font-medium">Price: {price} BDT</h2>
+        <h2 className="font-medium">Type: {type}</h2>
+
       </div>
       <div>
-        <div className="col-span-1 btn-group btn-group-vertical space-y-5">
-          <button className="btn btn-active">View</button>
-          <Link to={`updateProduct/${_id}`}><button className="btn">Edit</button></Link>
-          <button onClick={() => handleDelete(_id)} className="btn">X</button>
+        <div className=" flex  gap-4 mt-5">
+          <Link to={`/fullDetails/${_id}`} className='text-orange-600'><button className="px-2 rounded-md lg:px-3 py-1 lg:py-2 bg-blue-600 text-white w-16 lg:w-20">Details..</button></Link>
+          <Link to={`updateProduct/${_id}`}><button className="px-2 rounded-md lg:px-3 py-1 lg:py-2 bg-blue-600 text-white w-16 lg:w-20">Edit</button></Link>
+          <button onClick={() => handleDelete(_id)} className="px-2 rounded-md lg:px-3 py-1 lg:py-2 bg-blue-600 text-white w-16 lg:w-20">Remove</button>
         </div>
       </div>
     </div>

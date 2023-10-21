@@ -32,7 +32,7 @@ const Navbar = () => {
     <NavLink className="focus:bg-green-600 px-3 py-1 text-lg font-semibold rounded-md focus:text-white" to='/myCart'>My Cart</NavLink>
 
 
-    <NavLink className="focus:bg-green-600 px-3 py-1 text-lg font-semibold rounded-md focus:text-white" to='/signin'>Sign In</NavLink>
+    <NavLink className="focus:bg-green-600 px-3 py-1 text-lg font-semibold rounded-md focus:text-white" to='/signup'>Sign Up</NavLink>
 
 
   </>
@@ -77,7 +77,7 @@ const Navbar = () => {
               </div>
               :
               <Link to='/signin'>
-                <button className="text-sm lg:text-base text-white font-semibold px-4 py-1 lg:px-10 lg:py-2 bg-green-600 rounded-md">Sign in</button>
+                <button className="text-sm lg:text-base text-white font-semibold px-2 py-1 lg:px-6 lg:py-2 bg-green-600 rounded-md">Sign in</button>
               </Link>
           }
 

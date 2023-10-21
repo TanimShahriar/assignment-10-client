@@ -2,24 +2,75 @@
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
-      <nav className="grid grid-flow-col gap-4">
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
-      </nav>
-      <nav>
-        <div className="grid grid-flow-col gap-4">
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+    <div className="flex justify-center items-center mb-5">
+      <div className="bg-white items-center w-full md:max-w-7xl">
+        <div
+          className="flex flex-col justify-center items-center mt-3 space-y-2 md:mx-[50px] md:flex-row md:justify-between">
+          <p className="text-md font-semibold text-gray-800 md:text-lg md:text-gray-500/90"> Join Our Newsletter </p>
+          <div className="md:text-lg"> <input
+            className="bg-gray-200/70 border drop-shadow-sm shadow-gray-700 rounded-md placeholder-slate-400 px-2 py-1 focus:outline-none focus:border-cyan-600"
+            type="email" placeholder="E-mail Address" /> <button
+              className="px-2 py-1 m-1 rounded-md text-white bg-green-500  hover:text-blue-500 hover:bg-white hover:font-semibold hover:trandform ease-in-out duration-300">
+              Subscribe </button> </div>
+          <div className="text-center text-lg md:space-x-1"> <a
+            className="w-9 h-10 pt-1 m-2 md:ml-2 md:mr-0 inline-block border-1 rounded-lg text-white bg-blue-500 hover:bg-white hover:text-blue-500"
+            href="#">
+            <li className="fa fa-twitter"></li>
+          </a> <a
+            className="w-9 h-10 pt-1 m-2 inline-block border-1 rounded-lg text-white bg-orange-500 hover:bg-white hover:text-orange-500"
+            href="#">
+              <li className="fa fa-google"></li>
+            </a> <a
+              className="w-9 h-10 pt-1 m-2 inline-block border-1 rounded-lg text-white bg-red-500 hover:bg-white hover:text-red-500"
+              href="#">
+              <li className="fa fa-linkedin"></li>
+            </a> <a
+              className="w-9 h-10 pt-[5px] m-2 inline-block border-1 rounded-lg text-white bg-purple-500 hover:bg-white hover:text-purple-500"
+              href="#">
+              <li className="fa fa-telegram"></li>
+            </a> <a
+              className="w-9 h-10 pt-[5px] m-2 inline-block border-1 rounded-lg text-white bg-cyan-500 hover:bg-white hover:text-cyan-500"
+              href="#">
+              <li className="fa fa-facebook"></li>
+            </a> </div>
         </div>
-      </nav>
-      <aside>
-        <p>Copyright © 2023 - All right reserved by Quotient Tech & Electronics</p>
-      </aside>
-    </footer>
+        <hr className="mt-2 md:overflow-hidden" />
+        <div className="grid grid-cols-2 my-3 text-center md:grid-cols-4">
+          <div className="flex flex-col leading-7 items-start ml-20">
+            <h1 className="text-green-500 text-lg font-semibold">Product</h1>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Features</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Integrations</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Shopify Integrations</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Pricing</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Chrome Extensions</a> </p>
+          </div>
+          <div className="flex flex-col leading-7">
+            <h1 className="text-green-500 text-lg font-semibold">Company</h1>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Terms</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Customers</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Blog</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Terms of Servics</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Privacy Policy</a> </p>
+          </div>
+          <div className="flex flex-col my-6 leading-7 md:my-0">
+            <h1 className="text-green-500 text-lg font-semibold">Support</h1>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Community</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Support Customers</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Documentations</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Service Providers</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Email Contact</a> </p>
+          </div>
+          <div className="flex flex-col my-6 leading-7 md:my-0">
+            <h1 className="text-green-500 text-lg font-semibold">Contact Us</h1>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">Support@admin.com</a> </p>
+            <p> <a className="text-gray-500/80 hover:text-cyan-600" href="#">(+91)700-788-67-00</a> </p>
+          </div>
+        </div>
+        <hr className="mt-2 md:invisible" />
+
+      </div>
+    </div>
+
   );
 };
 
