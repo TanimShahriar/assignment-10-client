@@ -62,12 +62,14 @@ const FullDetails = () => {
       <div className="shadow-lg p-5 rounded-lg mx-auto max-w-screen-2xl">
 
         <img src={details.photo} alt="" />
-        <h2 className="my-5">{details.name}</h2>
-        <h2 className="my-5">{details.brand}</h2>
-        <h2 className="my-5">{details.price}</h2>
-        <h2 className="my-5">{details.type}</h2>
+        <h2 className="my-5 text-3xl font-bold">{details.name}</h2>
+        <h2 className="my-5">{details.details}</h2>
+        <h2 className="my-5">Price: {details.price} BDT</h2>
+        <h2 className="my-5">Type: {details.type}</h2>
+        <h2 className="my-5">Rating: {details.rating}</h2>
+        <h2 className="my-5 font-semibold">Brand: {details.brand}</h2>
         <div className="flex justify-between">
-          <button onClick={() => handleToAddCart(details)} className="btn btn-primary">Add to cart</button>
+          <button onClick={() => handleToAddCart(details)} className="px-4   rounded-md py-2 bg-green-600 text-white">Add to cart</button>
 
         </div>
       </div>
